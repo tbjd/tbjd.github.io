@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>tictactoe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/ticTacToe.css">
+        <script type="text/javascript" src="js/ticTacToe.js"></script>
+    </head>
+    <body>
+        <div id="TicTacToe" class="container ">
+
+  <div class="row">
+    <div id="titre" class=" mid col-sm-12">
+
+      <h1>TicTacToe</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div  class=" mid col-sm-12">
+      <a id="newGame" href="#" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#smallModal">Start New Game</a>
+    </div>
+    <div id="winner"></div>
+    
+  </div>
+  <div id = "ligne1" class="mid ligne  row">
+    <div id="c00" class="case colonne col-xs-4"><a id="c00" href="#" class="cente btn btn-default " ></a></div>
+    <div id="c01"  class="case colonne col-xs-4"><a  href="#" class="cente btn btn-default " ></a></div>
+    <div id="c02"   class="case col-xs-4"><a  href="#" class="cente btn btn-default " ></a></div>
+  </div>
+  <div  id = "ligne2" class="mid ligne  row">
+    <div id="c10"   class=" case colonne col-xs-4"><a  href="#" class="cente btn btn-default " ></a></div>
+    <div id="c11"   class="case colonne col-xs-4"><a  href="#" class="cente btn btn-default " ></a></div>
+    <div id="c12"  class="case col-xs-4"><a href="#" class="cente btn btn-default " ></a></div>
+  </div>
+  <div id = "ligne3"  class="mid  row">
+    <div id="c20"  class="case colonne col-xs-4"><a  href="#" class="cente btn btn-default " ></a></div>
+    <div id="c21"  class="case colonne col-xs-4"><a  href="#" class="cente btn btn-default " ></a></div>
+    <div id="c22"   class="case col-xs-4"><a  href="#" class="cente btn btn-default " ></a></div>
+  </div>
+</div>
+<div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class=" mid modal-title" id="myModalLabel">Choose your symbole</h4>
+      </div>
+      <div class="modal-body mid">
+        <button type="button" id="btnX"class="btn btn-default start" data-dismiss="modal">X</button>
+        <button type="button" id="btnO"class="btn btn-default start" data-dismiss="modal">O</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+    </body>
+</html>

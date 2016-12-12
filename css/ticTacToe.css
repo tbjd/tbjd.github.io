@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-12-12, 15:07:48
+    Author     : brodeurtristan
+*/
+
+.cente {
+  position: centered;
+  width: 100%;
+  height: 100%;
+  min-height: 72px;
+  max-height: 72px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 72px;
+  border-style: none;
+  margin-top: 4px;
+}
+
+.mid {
+  text-align: center;
+}
+
+.ligne {
+  border-bottom-style: solid;
+}
+
+.colonne {
+  border-right-style: solid;
+}
+
+#ligne1 {
+  margin-top: 20px;
+}
+
+.case {
+  min-height: 80px;
+  max-height: 80px;
+}
