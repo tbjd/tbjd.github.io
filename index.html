@@ -7,6 +7,7 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+<link href="css/prism.css" rel="stylesheet" />
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css"></script>
@@ -14,6 +15,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/index.css">
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="syntaxhighlighter.js"></script>
+<script src="js/prism.js"></script>
     <style type="text/css">
       blockquote {
           border-left:none; 
@@ -55,6 +58,7 @@
         </div>
     </div>
 </nav>
+
 <section class="container-fluid" id="section1">
     <div class="text-center">    
       <figure class="logo animated fadeInDown delay-07s">
@@ -84,6 +88,7 @@
       <div class="row">
         <div class="col-lg-6 wow fadeInLeft delay-05s animated">
           <h5>Education</h5>
+
           <ul class="text-justify">
             <li>Computer science student at Laval University
             </li>
@@ -142,7 +147,7 @@
             <h6>Easy</h6>
           
           <ul class="text-justify">
-            <li>Onboarding - Java: input/output operations, basic conditional statements.</li>
+            <li><a href="#" data-toggle="modal" data-target="#onboarding">Onboarding - Java: input/output operations, basic conditional statements.</a></li>
             <li>Power of Thor - Java: same.</li>
             <li>Skynet, the Chasm - Java: same.</li>
             <li>Mars Lander, level 1 - Java: same + control flow statements.</li>
@@ -214,3 +219,41 @@
         <!--/row-->
     </div>
 </footer>
+      <div class="modal fade" id="onboarding" tabindex="-1" role="dialog" aria-labelledby="onboarding" aria-hidden="true">
+  <div class="modal-dialog modal-m">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div class=" mid modal-title" id="myModalLabel">
+            <pre><code class="language-clike">import java.util.*;
+
+class Player {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+
+        // game loop
+        while (true) {
+            String enemy1 = in.next(); // name of enemy 1
+            int dist1 = in.nextInt(); // distance to enemy 1
+            String enemy2 = in.next(); // name of enemy 2
+            int dist2 = in.nextInt(); // distance to enemy 2
+
+            // Write an action using System.out.println()
+
+            // Enter the code here
+
+            if (dist1 < dist2) {
+                System.out.println(enemy1);
+            } else {
+                System.out.println(enemy2);
+            }
+        }
+    }
+}</code></pre></div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
