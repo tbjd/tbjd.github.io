@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : brodeurtristan
 */
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url(https://fonts.googleapis.com/css?family=Arima+Madurai);
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@ div {
 .b {
   background-color: #333;
   color: #333;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Arima Madurai', 'cursive', 'sans-serif';
   font-weight:400;
 }
 .footer {
@@ -35,16 +35,15 @@ div {
 
 }
 .quote-box {
-  border-radius:3px;
+  border-radius:50%;
   position:relative;
   margin:8% auto auto auto;
-  width:450px;
-  padding:40px 50px;
+  width:550px;
+  padding:60px 60px;
   display:table;
   background-color:#fff;
 }
   .quote-text {
-
     text-align:center;
     width:450px;
     height:auto;
@@ -63,7 +62,7 @@ div {
 .button {
       height:38px;
       border:none;
-      border-radius:3px;
+      border-radius:50%;
       color:#fff;
       background-color:#333;
       outline:none;

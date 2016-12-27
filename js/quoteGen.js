@@ -5,7 +5,7 @@
  */
 
 
-var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
+var colors = ['#0863b5', '#fec600', '#f39100', '#e3001f', '#e50064', '#954a97', '#009ee3', '#13a538'];
 var currentQuote = '', currentAuthor = '';
 
 function getQuote() {
