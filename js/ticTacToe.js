@@ -21,22 +21,22 @@ function getWinner(board) {
         var diagonalComplete1 = true;
         var diagonalComplete2 = true;
         for (var i = 0; i < 3; i++) {
-            if (board[i][i] !== value) {
+            if (board[i][i] != value) {
                 diagonalComplete1 = false;
             }
-            if (board[2 - i][i] !== value) {
+            if (board[2 - i][i] != value) {
                 diagonalComplete2 = false;
             }
             var rowComplete = true;
             var colComplete = true;
             for (var j = 0; j < 3; j++) {
-                if (board[i][j] !== value) {
+                if (board[i][j] != value) {
                     rowComplete = false;
                 }
-                if (board[j][i] !== value) {
+                if (board[j][i] != value) {
                     colComplete = false;
                 }
-                if (board[i][j] === null) {
+                if (board[i][j] == null) {
                     allNotNull = false;
                 }
             }
@@ -80,14 +80,14 @@ function restartGame(turn) {
 function updateMove() {
     updateButtons();
     var winner = getWinner(board);
-    $("#winner").text(winner === 1 ? "AI Won!" : winner === 0 ? "You Won!" : winner === -1 ? "Tie!" : "");
+    $("#winner").text(winner == 1 ? "AI Won!" : winner == 0 ? "You Won!" : winner == -1 ? "Tie!" : "");
     
 }
 
 function updateButtons() {
     for (var i = 0; i < 3; i++) {
         for (var j = 0; j < 3; j++) {
-            $("#c" + i + "" + j).text(board[i][j] === false ? mySymbole : board[i][j] === true ? aiSymbole : "");
+            $("#c" + i + "" + j).text(board[i][j] == false ? mySymbole : board[i][j] == true ? aiSymbole : "");
         }
     }
 }
@@ -96,7 +96,7 @@ var numNodes = 0;
 function recurseMinimax(board, player) {
     numNodes++;
     var winner = getWinner(board);
-    if (winner !== null) {
+    if (winner != null) {
         switch(winner) {
             case 1:
                 // AI wins
@@ -115,10 +115,10 @@ function recurseMinimax(board, player) {
 
         for (var i = 0; i < 3; i++) {
             for (var j = 0; j < 3; j++) {
-                if (board[i][j] === null) {
+                if (board[i][j] == null) {
                     board[i][j] = player;
                     var value = recurseMinimax(board, !player)[0];
-                    if ((player && (nextVal === null || value > nextVal)) || (!player && (nextVal === null || value < nextVal))) {
+                    if ((player && (nextVal == null || value > nextVal)) || (!player && (nextVal == null || value < nextVal))) {
                         nextBoard = board.map(function(arr) {
                             return arr.slice();
                         });
@@ -133,7 +133,7 @@ function recurseMinimax(board, player) {
 }
 
 function makeMove() {
-    if(cpt === 0){
+    if(cpt == 0){
       cpt++;
       board[0][0] = 1;
       myMove = false;
@@ -156,7 +156,7 @@ if (myMove) {
 }
 
 $(document).ready(function() {
-    $("div").click(function() {
+    $(".case").click(function() {
         var cell = $(this).attr("id");
         var row = parseInt(cell[1]);
         var col = parseInt(cell[2]);
