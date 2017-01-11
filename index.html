@@ -13,8 +13,8 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/addons/p5.dom.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.js"></script>
+       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/addons/p5.dom.js"></script>-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.js"></script>-->
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <script type="text/javascript" src="js/index.js"></script>
         <script src="js/prism.js"></script>
@@ -42,10 +42,10 @@
 
                 <div class="navbar-collapse collapse" id="navbar-collapsible">
                     <ul class="nav navbar-nav navbar-left">
-                        <li><a class="" href="#section1">Home</a>
+                        <li><a class="" href="#section1">Accueille</a>
 
                         </li>
-                        <li><a class="" href="#section2">About</a>
+                        <li><a class="" href="#section2">À-propos</a>
 
                         </li>
                         <li><a class="" href="#section3">PortFolio</a>
@@ -69,8 +69,8 @@
                         <img src="https://www.wordans.ca/wvc-1275031486/wordansfiles/images/2010/5/28/34944/34944_340.jpg">
                     </a>
                 </figure></div>
-            <h1 class="text-center">Welcome to Tristan Brodeur's portfolio</h1>
-            <h2 class="text-center">Web designer & problem solver.</h2>
+            <h1 class="text-center">Bienvenue dans le portfolio de  Tristan Brodeur</h1>
+            <h2 class="text-center">Étudiant en Informatique</h2>
 
             <div class="container target text-center">
                 <a href="#section2"> <button class="btn btn-default btn-circle" ><span class="glyphicon glyphicon-menu-down"></span></button></a>
@@ -84,27 +84,31 @@
         <section class="container-fluid" id="section2">
             <div class="row">
                 <div class="container text-center">
-                    <h3>About</h3>
+                    <h3>À-propos</h3>
                     <blockquote>"Nothing great in the Wolrd has been accomplished without passion."
                         <footer>Georg Wilhelm Friedrich Hegel</footer>
                     </blockquote>
                     <div class="row">
                         <div class="col-lg-6 wow fadeInLeft delay-05s animated">
-                            <h5>Education</h5>
+                            <h4>Éducation</h4>
 
                             <ul class="text-justify">
-                                <li>Computer science student at Laval University
+                                <li>Étudiant au Baccalauréat en Informatique à l'Université Laval.
                                 </li>
                             </ul>
-                            <h5>Goal</h5>
+                            <h4 class="marginTop">But</h4>
                             <ul class="text-justify">
-                                <li>My goal is to learn. Learn every day. Learn about life. Make self improvement and help the people around me to improve. Learn about love, finance, spirituality and science. My ultimate goal, is to one day, live in a world where their is harmony
-                                    between human, animal and nature.
+                                <li>Prochain 6 mois : Être en mesure de créer une application web évolutive de A-Z ainsi que la déployer sur AWS (Amazon web services).
+
+                                    Programmer un bot qui joue au Quidditch contre d’autres bots (<a href="https://www.codingame.com/multiplayer/bot-programming/fantastic-bits">codingame/multiplayer/bot-programming/fantastic-bits</a>)
+
+                                </li>
+                                <li class="smallMargin">Prochaine année: Apprendre le plus possible sur le sujet de l'intelligence artificielle et participer à un maximum de hackfest. </li>
+                                <li class="smallMargin">Prochaine 5 années : Maintenir des habitudes saines et une mentalité de croissance. Être engagé dans un projet me tenant à coeur tout en apportant une influence positive sur le monde. Ne pas avoir de regret. Inspirer.</li>
                             </ul>
-                            <h5>Vision</h5>
+                            <h4 class ="marginTop">Mission</h4>
                             <ul class="text-justify">
-                                <li>With the help of well designed software i belive that we can achieve some very great and beautiful things. If the objective of your buisness is to make peaple life better at any level, i'd be glad to help you build amazing website/software.
-                                    You can be sure that i will listen carefuly to your need, think sharp about problem's and execute in an Agile way of work.
+                                <li>Développer des solutions de haute qualité s'adressant aux problèmes d'aujourd'hui. 
                                 </li>
                             </ul>
                         </div>
@@ -126,10 +130,19 @@
                         <div class="text-center">
                             <h5><a href="ticTacToe.html" target="_blank" >Unbeatable TicTacToe (MiniMax algo)</a></h5>
                         </div>
+                        <div class="text-center">
+                            <h5>Application de gestion de film (travail de session)</h5>
+                        </div>
+                        <div class="text-center">
+                            <h5><a href="calculator.html" target="_blank" >Simple calculator</a></h5>
+                        </div>
                     </div>
                     <div class= "col-lg-6 wow fadeInLeft delay-05s animated">
                         <div class="text-center">
                             <h5><a href="quoteGen.html" target="_blank" >Random Quote Generator(using API)</a></h5>
+                        </div>
+                        <div class="text-center">
+                            <h5>Pomodoro Clock</h5>
                         </div>
                     </div>
                     </section>
@@ -143,32 +156,34 @@
                                 <div class="row">
                                     <div class="col-lg-12 wow fadeInLeft delay-05s animated">
                                         <div class="text-center">
-                                            <h5>CodinGame puzzle solution</h5>
+                                            <h5>Solution aux puzzle de <a href="https://www.codingame.com">CodinGame</a></h5>
 
 
-                                            <h6>Easy</h6>
+                                            <h4 class="text-left">Easy</h4>
 
                                             <ul class="text-justify">
-                                                <li><a href="#" data-toggle="modal" data-target="#onboarding">Onboarding - Java: input/output operations, basic conditional statements.</a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#powerOfThor">Power of Thor - Java: same.</a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#marsLander">Mars Lander, level 1 - Java: same + control flow statements.</a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#theDescent">The Descent - Java: same + linear search.</a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#temperature">Temperatures - Java: same + more advanced string manipulation + dealing with large dataset.</a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#chuckNorris">Chuck Norris - Java: same.</a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#asciiArt">ASCII Art - Java: a lot of string manipulation</a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#MIME">MIME type - Java: using a dictionary.</a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#defibrilator">Defibrillators - Java: more advanced string manipulation, linear search.</a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#horseRacing">Horse-racing Duals - Java: sort, linear search.</a></li>
+                                                <li><a href="#" data-toggle="modal" data-target="#onboarding">Onboarding - Java</a>: Standard input parsing, game loop, writing to the standard output.</li>
+                                                <li><a href="#" data-toggle="modal" data-target="#powerOfThor">Power of Thor - Java</a>: Conditions.</li>
+                                                <li><a href="#" data-toggle="modal" data-target="#marsLander">Mars Lander, level 1 - Java</a>: Conditions.</li>
+                                                <li><a href="#" data-toggle="modal" data-target="#theDescent">The Descent - Java</a>: Loops and sorting.</li>
+                                                <li><a href="#" data-toggle="modal" data-target="#temperature">Temperatures - Java</a>: Conditions,Loops, absolute value and large data sets.</li>
+                                                <li><a href="#" data-toggle="modal" data-target="#chuckNorris">Chuck Norris - Java</a>: Conditions, loops, strings and encoding.</li>
+                                                <li><a href="#" data-toggle="modal" data-target="#asciiArt">ASCII Art - Java</a>: A lot of string manipulation.</li>
+                                                <li><a href="#" data-toggle="modal" data-target="#MIME">MIME type - Java</a>: Conditions, Loops, hash tables and strings.</li>
+                                                <li><a href="#" data-toggle="modal" data-target="#defibrilator">Defibrillators - Java</a>: Loops, distances, trigonometry and more advance string manipulation.</li>
+                                                <li><a href="#" data-toggle="modal" data-target="#horseRacing">Horse-racing Duals - Java</a>: Sorting and lists.</li>
+                                            </ul>
+                                            
+                                            <h4 class="text-left">Medium</h4>
+                                            
+                                            <ul class="text-justify">
+                                                <li><a href="#" data-toggle="modal" data-target="#thereIsNoSpoon1">There is no spoon, EP.1 - Java</a>:  Loops and multidimensional array </li>
+                                                <li><a href="#" data-toggle="modal" data-target="#dontPanic1">Dont't panic, EP.1 - Java</a>: Conditions </li>
+                                                <li><a href="#" data-toggle="modal" data-target="#stockExchangeLosses">Stock exchange losses - Java</a>: Conditions </li>
+                                                <li><a href="#" data-toggle="modal" data-target="#skynetRevolution1">Skynet revolution, EP.1 - Java</a>: Graph Theory and Breadth First Search </li>
+                                                <li><a href="#" data-toggle="modal" data-target="#shadowOfTheNight">Shadow of the night - Java</a>: Multidimensional and binary search </li>
                                             </ul>
                                             <!--
-                                                                                        <h6>Medium</h6>
-                                            
-                                                                                        <ul class="text-justify">
-                                                                                            <li></li>
-                                                                                            <li></li>
-                                            
-                                                                                        </ul>
-                                            
                                                                                         <h6>Hard</h6>
                                             
                                                                                         <ul class="text-justify">
@@ -190,6 +205,7 @@
                                                                                             <li></li>
                                                                                         </ul>
                                             -->
+                                            
 
                                         </div>
 
@@ -226,9 +242,9 @@
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : your program must find which of the two targets is the closest </p>
                                         <pre>
-                                            <code class="language-clike">import java.util.*;
-
+                                            <code class="language-clike">                                  
 class Player {
 
     public static void main(String args[]) {
@@ -266,9 +282,9 @@ class Player {
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : a basic problem to go a little bit further with conditions and variables: your program must allow Thor to reach the coordinates of the light of power in a 2D field. </p>
                                         <pre>
-                                            <code class="language-clike">import java.util.*;
-
+                                            <code class="language-clike">
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -336,9 +352,9 @@ class Player {
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : the goal of this puzzle is to safely land the spaceship on the platform. It's an simple introduction to the « Mars Lander - Episode 2 ». Some data is useless and solving this problem only requires a simple condition. </p>
                                         <pre>
-                                            <code class="language-clike">import java.util.*;
-
+                                            <code class="language-clike">
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -393,9 +409,9 @@ class Player {
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : a simple problem to try out the CodinGame platform: your program must find the highest mountain out of a list of mountains. </p>
                                         <pre>
-                                            <code class="language-clike">import java.util.*;
-
+                                            <code class="language-clike">
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -437,9 +453,9 @@ class Player {
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : your program must analyze records of temperatures to find the closest to zero. </p>
                                         <pre>
-                                            <code class="language-clike">import java.util.*;
-
+                                            <code class="language-clike">
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -500,8 +516,9 @@ class Solution {
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : your program must encode a string into a series of zeros. </p>
                                         <pre>
-                                            <code class="language-clike">import java.util.*;
+                                            <code class="language-clike">
 
 A faire
                                         </code>
@@ -517,9 +534,9 @@ A faire
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : the goal of the problem is to simulate an old airport terminal display: your program must display a line of text in ASCII art. </p>
                                         <pre>
-                                            <code class="language-clike">import java.util.*;
-
+                                            <code class="language-clike">
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -573,9 +590,9 @@ class Solution {
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : back to basics with this puzzle where you have to associate file names with their MIME type. </p>
                                         <pre>
-                                            <code class="language-clike">import java.util.*;
-
+                                            <code class="language-clike">
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -631,9 +648,9 @@ class Solution {
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : the goal of this exercise is to make you find the closest point to given geographic coordinates (latitude and longitude). Your program must print the associated location name.</p>
                                         <pre>
-                                            <code class="language-clike">import java.util.*;
-
+                                            <code class="language-clike">
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -742,9 +759,9 @@ class Defib {
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : in this problem you have to find the two numbers that are closest to each other among a list of numbers. The list might be really large and force you to search for the best possible algorithmic complexity for your solution. </p>
                                         <pre>
-                                            <code class="language-clike">import java.util.*;
-
+                                            <code class="language-clike">
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -800,6 +817,463 @@ class Solution {
             // To debug: System.err.println("Debug messages...");
     
             System.out.println(diff);
+    }
+}
+                                        </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="thereIsNoSpoon1" tabindex="-1" role="dialog" aria-labelledby="thereIsNoSpoon1" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : the goal is to find, when they exist, the horizontal and vertical neighbors nodes from a two dimensional array. The difficulty is in the number of nested loops that this puzzle can make you write. Do not get lost!</p>
+                                        <pre>
+                                            <code class="language-clike">
+import java.util.*;
+import java.io.*;
+import java.math.*;
+import java.awt.*;
+
+/**
+ * Don't let the machines win. You are humanity's last hope...
+ **/
+class Player {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int width = in.nextInt(); // the number of cells on the X axis
+        int height = in.nextInt(); // the number of cells on the Y axis
+        int[][] map;
+        map = new int[height][width];
+        in.nextLine();
+        for (int i = 0; i &lt; height; i++) {
+            String line = in.nextLine(); // width characters, each either 0 or .
+            System.err.println(line);
+            int j = 0;
+            for(char c: line.toCharArray()){
+                if(c == '0'){
+                    map[i][j] = 0;
+                }else map[i][j] = -1;
+                j++;
+            }
+            
+        }
+     
+        for(int i = 0; i &lt; height; i++){
+            for(int j = 0; j&lt; width; j++){
+                System.err.println(map[i][j]);
+
+                int x1 = 0;
+                int y1 = 0;
+                int x2 = -1;
+                int y2 = -1;
+                int x3 = -1;
+                int y3 = -1;
+                if(map[i][j] == 0){
+                    x1 = j;
+                    y1 = i;
+                    for(int k = 1; k+j &lt; width ; k++){
+                       if(map[i][j + k] == 0){
+                        x2 = j+k;
+                        y2 = i;
+                        break;
+                        }
+                    }
+                    for(int z = 1; z+i &lt; height ; z++){
+                        if( map[i+z][j] == 0){
+                        x3 = j;
+                        y3 = i+z;
+                        break;
+                        }
+                    } 
+                    System.out.println(x1 + " " + y1 + " " + x2 + " " + y2 + " " + x3 + " " + y3);
+                    }
+                    
+                    
+                    
+                }
+            }
+        }
+
+        // Three coordinates: a node, its right neighbor, its bottom neighbor
+        
+    }
+                                        </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="dontPanic1" tabindex="-1" role="dialog" aria-labelledby="dontPanic1" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : guide the clones towards the exit of the maze, stop when you’re going away from the exit, continue if you are going the right way. You are given the position and direction of your clones. </p>
+                                        <pre>
+                                            <code class="language-clike">
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Player {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int nbFloors = in.nextInt(); // number of floors
+        int width = in.nextInt(); // width of the area
+        int nbRounds = in.nextInt(); // maximum number of rounds
+        int exitFloor = in.nextInt(); // floor on which the exit is found
+        int exitPos = in.nextInt(); // position of the exit on its floor
+        int nbTotalClones = in.nextInt(); // number of generated clones
+        int nbAdditionalElevators = in.nextInt(); // ignore (always zero)
+        int nbElevators = in.nextInt(); // number of elevators
+        
+        int[] elevatorArray = new int[nbElevators+1];
+        for (int i = 0; i &lt; nbElevators; i++) {
+            int elevatorFloor = in.nextInt(); // floor on which this elevator is found
+            int elevatorPos = in.nextInt(); // position of the elevator on its floor
+            elevatorArray[elevatorFloor] = elevatorPos;
+        }
+        elevatorArray[nbElevators] = exitPos;
+        System.err.println(elevatorArray[0]);
+        int cptTurn = 0;
+        // game loop
+        while (true) {
+            System.err.println(cptTurn);
+            
+            int cloneFloor = in.nextInt(); // floor of the leading clone
+            int clonePos = in.nextInt(); // position of the leading clone on its floor
+            String direction = in.next(); // direction of the leading clone: LEFT or RIGHT
+            System.err.println("positin leading cpone = "+ cloneFloor);
+            // Write an action using System.out.println()
+            // To debug: System.err.println("Debug messages...");
+            if(clonePos == -1){
+                System.out.println("WAIT");
+            }
+            else if(clonePos &lt; elevatorArray[cloneFloor] && direction.equals("LEFT") ){
+                
+                System.err.println("left"); 
+                System.out.println("BLOCK");
+            } 
+            else if(clonePos > elevatorArray[cloneFloor] && direction.equals("RIGHT")){
+                
+                System.err.println("right"); 
+                System.out.println("BLOCK");
+            }
+            else{
+                System.out.println("WAIT"); // action: WAIT or BLOCK
+                
+            }
+            cptTurn++;
+        }
+    }
+}
+                                        </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="stockExchangeLosses" tabindex="-1" role="dialog" aria-labelledby="stockExchangeLosses" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : given a list of numbers, you have to find not the minimal value but the maximal drop. Be careful that a drop can span on several values!</p>
+                                        <pre>
+                                            <code class="language-clike">
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] price = new int[n];
+        for (int i = 0; i &lt; n; i++) {
+            int v = in.nextInt();
+            price[i] = v;
+        
+        }
+        int diff = 0;
+        int lastIndex = 0;
+        
+            for(int i = lastIndex+1; i&lt;n; i++){
+                
+            
+                int tempDiff = price[i] - price[lastIndex];
+                if(tempDiff &lt; 0 && tempDiff &lt; diff){
+                    diff = tempDiff;
+                }
+                else if (tempDiff > 0){
+                    System.err.println("in else");
+                      
+                    lastIndex = i;
+                    } 
+                
+            }
+        System.out.println(diff);  
+        
+    }
+        
+        // Write an action using System.out.println()
+        // To debug: System.err.println("Debug messages...");
+        
+    }
+
+                                        </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="skynetRevolution1" tabindex="-1" role="dialog" aria-labelledby="skynetRevolution1" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : this problem plays out on a graph where a “virus” moves from node to node, in search of an exit. There are several exits and you have to cut access to these exits by finding the best link to cut each turn.</p>
+                                        <pre>
+                                            <code class="language-clike">
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Player {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt(); // the total number of nodes in the level, including the gateways
+        int L = in.nextInt(); // the number of links
+        int E = in.nextInt(); // the number of exit gateways
+        ArrayList&lt;ArrayList&lt;Integer>> M = new ArrayList&lt;ArrayList&lt;Integer>>();
+        ArrayList&lt;Integer> G = new ArrayList&lt;Integer>();
+        Graph g = new Graph(N,L,E,M,G);
+        g.iniMatrix();
+        System.err.println("ok");
+        
+        for (int i = 0; i &lt; L; i++) {
+            int N1 = in.nextInt(); // N1 and N2 defines a link between these nodes
+            int N2 = in.nextInt();
+            g.addLink(N1,N2);
+        }
+        for (int i = 0; i &lt; E; i++) {
+            int EI = in.nextInt(); // the index of a gateway node
+            g.addGate(EI);
+        }
+
+        
+        
+        // game loop
+        while (true) {
+            int SI = in.nextInt(); // The index of the node on which the Skynet agent is positioned this turn
+            System.out.println(g.getLinkToCut(SI));
+        }
+    }
+}
+class Graph{
+    int nbNode;
+    int nbLink;
+    int nbGate;
+    ArrayList<&lt;ArrayList&lt;Integer>> adjMatrix ;
+    ArrayList&lt;Integer> gate ;
+    
+    public Graph(){
+        nbNode = 0;
+        nbLink = 0;
+        nbGate = 0;
+        adjMatrix = new ArrayList&lt;ArrayList&lt;Integer>>();
+        gate = new ArrayList&lt;Integer>();
+    }
+    public Graph(int p_nbNode, int p_nbLink, int p_nbGate, ArrayList&lt;ArrayList&lt;Integer>> p_adjMatrix, ArrayList&lt;Integer> p_gate){
+        nbNode = p_nbNode;
+        nbLink = p_nbLink;
+        nbGate = p_nbGate;
+        adjMatrix  = p_adjMatrix;
+        gate = p_gate;
+        
+    }
+    public void addLink(int i, int j){
+        adjMatrix.get(i).set(j,1);
+        
+    }
+    public void removeLink(int i, int j){
+        adjMatrix.get(i).set(j,0);
+        
+    }
+    public void addGate(int i){
+        gate.add(i);
+    }
+    public ArrayList&lt;Integer> getAdj(int source){
+        ArrayList&lt;Integer> adj = new ArrayList&lt;Integer>();
+        for(int i = 0; i &lt; nbNode; i++){
+            if(adjMatrix.get(source).get(i) == 1 || adjMatrix.get(i).get(source) == 1){
+                adj.add(i);
+                System.err.println("ajout le sommet adj "+ i);
+            }
+        }
+        return adj;
+    }
+    public boolean isGate(int source){
+        for(int i = 0; i &lt; nbGate; i++){
+            if(gate.get(i) == source)return true;
+        }
+        return false;
+    }
+    public void iniMatrix(){
+        for(int i = 0; i &lt; nbNode; i++){
+            ArrayList&lt;Integer> l = new ArrayList&lt;Integer>();
+                adjMatrix.add(l);
+            for(int j = 0; j &lt; nbNode; j++){
+                
+                adjMatrix.get(i).add(0);
+                System.err.println("initmatrix");
+            }
+        }
+    }
+    public String getLinkToCut(int source){
+        String link = "";
+        
+        Queue&lt;Integer> Q = new PriorityQueue&lt;Integer>();
+           
+            Q.add(source);
+                while(Q.peek()!= null){
+                    System.err.println("the peek is = "+ Q.peek());
+                    int current = Q.poll();
+                    System.err.println("sommet courant=" + current);
+                    ArrayList&lt;Integer> adj = getAdj(current);
+                    System.err.println("les Somment adj sont");
+                    for(int i = 0; i &lt; adj.size(); i++){
+                        System.err.println(adj.get(i));
+                    }
+                    for(int i = 0; i &lt; adj.size(); i++){
+                        if(isGate(adj.get(i))){
+                            link = current + " "+ adj.get(i);
+                            System.err.println("remove link : "+link);
+                            
+                            
+                            removeLink(current, adj.get(i));
+                            return link;
+                        }
+                        Q.add(adj.get(i));
+                    }
+                    
+            // Write an action using System.out.println()
+            // To debug: System.err.println("Debug messages...");
+
+
+            // Example: 0 1 are the indices of the nodes you wish to sever the link between
+            
+            }
+        return link;
+    }
+}
+                                        </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="shadowOfTheNight" tabindex="-1" role="dialog" aria-labelledby="shadowOfTheNight" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <div class=" mid modal-title" id="myModalLabel">
+                                        <p>Statement : the goal of this puzzle is to guess the coordinate of a bomb (line and column of a 2 dimensional array). You will have to make a guess at each step of the puzzle and adjust it from given feedbacks. Of course, you have a limited number of guess.</p>
+                                        <pre>
+                                            <code class="language-clike">
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Player {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int W = in.nextInt(); // width of the building.
+        int H = in.nextInt(); // height of the building.
+        int N = in.nextInt(); // maximum number of turns before game over.
+        int X0 = in.nextInt();
+        int Y0 = in.nextInt();
+        
+        int lastU = H;
+        int lastD = 0;
+        int lastR = 0;
+        int lastL = W;
+        
+        int batx = X0;
+        int baty = Y0;
+        
+        String jump = "";
+        // game loop
+
+        while (true) {
+            
+            String bombDir = in.next(); // the direction of the bombs from batman's current location (U, UR, R, DR, D, DL, L or UL)
+            
+            if(bombDir.contains("U")){
+
+                lastU = baty;
+                baty = (lastU + lastD)/2;
+                
+                
+            }
+            if(bombDir.contains("D")){
+                
+                lastD = baty;
+                baty = (lastD + lastU)/2;
+                
+            }
+            if(bombDir.contains("L")){
+                lastL = batx;
+                batx = (lastL +lastR)/2;
+                
+            }
+            if(bombDir.contains("R")){
+                lastR = batx;
+                batx = (lastR+ lastL)/2;
+                
+            }
+            // Write an action using System.out.println()
+            // To debug: System.err.println("Debug messages...");
+            jump = batx + " " + baty;
+            
+            // the location of the next window Batman should jump to.
+            System.out.println(jump);
+        }
     }
 }
                                         </code>
