@@ -10,13 +10,13 @@ var myMove;
 var aiSymbole;
 var mySymbole;
 function getWinner(board) {
-    
+
     // Check if someone won
     vals = [true, false];
     var allNotNull = true;
     for (var k = 0; k < vals.length; k++) {
         var value = vals[k];
-        
+
         // Check rows, columns, and diagonals
         var diagonalComplete1 = true;
         var diagonalComplete2 = true;
@@ -60,41 +60,43 @@ function restartGame(turn) {
         [null, null, null],
         [null, null, null]
     ];
-    
+
     myMove = turn;
-    if(myMove){
+    if (myMove) {
         cpt = 0;
-        
+
         updateMove();
         makeMove();
     }
-    if(!myMove){
+    if (!myMove) {
         cpt = 1;
-        
+
         updateMove();
-        
+
     }
-    
+
 }
 
 function updateMove() {
-    try{
-        
-        
+    try {
+
+
         updateButtons();
         var winner = getWinner(board);
         $("#winner").text(winner == 1 ? "AI Won!" : winner == 0 ? "You Won!" : winner == -1 ? "Tie!" : "");
-    }catch(e){}
+    } catch (e) {
+    }
 }
 
 function updateButtons() {
-    try{
-    for (var i = 0; i < 3; i++) {
-        for (var j = 0; j < 3; j++) {
-            $("#c" + i + "" + j).text(board[i][j] == false ? mySymbole : board[i][j] == true ? aiSymbole : "");
+    try {
+        for (var i = 0; i < 3; i++) {
+            for (var j = 0; j < 3; j++) {
+                $("#c" + i + "" + j).text(board[i][j] == false ? mySymbole : board[i][j] == true ? aiSymbole : "");
+            }
         }
+    } catch (e) {
     }
-    }catch(e){}
 }
 var numNodes = 0;
 
@@ -102,7 +104,7 @@ function recurseMinimax(board, player) {
     numNodes++;
     var winner = getWinner(board);
     if (winner != null) {
-        switch(winner) {
+        switch (winner) {
             case 1:
                 // AI wins
                 return [1, board]
@@ -117,14 +119,14 @@ function recurseMinimax(board, player) {
         // Next states
         var nextVal = null;
         var nextBoard = null;
-        
+
         for (var i = 0; i < 3; i++) {
             for (var j = 0; j < 3; j++) {
                 if (board[i][j] == null) {
                     board[i][j] = player;
                     var value = recurseMinimax(board, !player)[0];
                     if ((player && (nextVal == null || value > nextVal)) || (!player && (nextVal == null || value < nextVal))) {
-                        nextBoard = board.map(function(arr) {
+                        nextBoard = board.map(function (arr) {
                             return arr.slice();
                         });
                         nextVal = value;
@@ -138,13 +140,13 @@ function recurseMinimax(board, player) {
 }
 
 function makeMove() {
-    if(cpt == 0){
+    if (cpt == 0) {
         cpt++;
         board[0][0] = 1;
         myMove = false;
         updateMove();
-        
-    }else{
+
+    } else {
         board = minimaxMove(board);
         console.log(numNodes);
         myMove = false;
@@ -160,12 +162,12 @@ if (myMove) {
     makeMove();
 }
 
-$(document).ready(function() {
-    
-    $(".case").click(function() {
-        try{
-            
-            
+$(document).ready(function () {
+
+    $(".case").click(function () {
+        try {
+
+
             var cell = $(this).attr("id");
             var row = parseInt(cell[1]);
             var col = parseInt(cell[2]);
@@ -175,20 +177,22 @@ $(document).ready(function() {
                 updateMove();
                 makeMove();
             }
-        }catch(e){}});
-    $("#btnX").click(function(){
+        } catch (e) {
+        }
+    });
+    $("#btnX").click(function () {
         var b = false;
         aiSymbole = "o";
         mySymbole = "x";
         restartGame(b);
     });
-    $("#btnO").click(function(){
+    $("#btnO").click(function () {
         var b = true;
         aiSymbole = "x";
         mySymbole = "o";
         restartGame(b);
     });
-    
+
 });
 
 updateMove();

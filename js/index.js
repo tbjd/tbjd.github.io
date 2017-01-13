@@ -6,17 +6,25 @@
 
 
 /* activate scrollspy menu */
-$(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
 
-	    var target = this.hash;
-	    var $target = $(target);
+$(document).ready(function () {
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
+        var target = this.hash;
+        var $target = $(target);
+        try {
+
+
+            $('html, body').stop().animate({
+
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        } catch (e) {
+        }
+    });
+
+
 });

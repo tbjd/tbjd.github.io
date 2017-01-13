@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pomodoro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/pomodoro.css" rel="stylesheet"/>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/pomodoro.js"></script>
+
+</head>
+<body>
+<h1>Pomodoro Clock</h1>
+<div class="lengthContainer">
+    <div>
+        <p>Break length</p>
+        <div class="upDown">
+            <button id="btnBreakMinus">-</button>
+            <div id="bLengthText" class="Blength"></div>
+            <button id="btnBreakPlus">+</button>
+        </div>
+    </div>
+    <div>
+        <p>Session length</p>
+        <div class="upDown">
+            <button id="btnSessionMinus">-</button>
+            <div id="sLengthText" class="Slength"></div>
+            <button id="btnSessionPlus">+</button>
+        </div>
+    </div>
+</div>
+
+<div id="timer" class="timer">
+    <div id="session" class="session">
+    </div>
+    <div id="time" class="session">
+    </div>
+</div>
+
+<audio id="buzzer" src="http://www.oringz.com/oringz-uploads/sounds-917-communication-channel.mp3"></audio>
+</body>
+</html>
