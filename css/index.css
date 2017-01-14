@@ -8,9 +8,18 @@ html,body {
 .icon-bar {
 	background-color:#fff;
 }
+.photo{
+    display: inline;
 
-
-
+}
+.portFolioImg{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 8%;
+}
+#portFolio{
+    padding-bottom: 18px;
+}
 
 
 section {
