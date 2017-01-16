@@ -673,6 +673,7 @@ $(document).ready(function () {
         return arr1;
     }
 
+
     function permAlone(str) {
 
 
@@ -826,7 +827,7 @@ $(document).ready(function () {
         $('#repSumPrime').html(JSON.stringify(s));
     });
     $('#btnSmallestCommonMultiple').click(function () {
-        smallestCommons([1, 13]);
+        var s = smallestCommons([1, 13]);
         $('#repSmallestCommonMul').html(JSON.stringify(s));
     });
     $('#btnFindersKeepers').click(function () {
@@ -850,7 +851,7 @@ $(document).ready(function () {
         $('#repEverythingTrue').html(JSON.stringify(s));
     });
     $('#btnArgumentsOptional').click(function () {
-        var s = addTogether(("http://bit.ly/"));
+        var s = addTogether(2, 3);
         $('#repArgumentsOp').html(JSON.stringify(s));
     });
     $('#btnUsPhone').click(function () {
@@ -869,6 +870,8 @@ $(document).ready(function () {
         var s = permAlone('aab');
         $('#repNoRepeat').html(JSON.stringify(s));
     });
+
+
 
 
 });

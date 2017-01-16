@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42dfb57f-7f60-48c0-801a-6f758275c564" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tbjd.github.io.iml" afterPath="$PROJECT_DIR$/.idea/tbjd.github.io.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jsAlgo.css" afterPath="$PROJECT_DIR$/css/jsAlgo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jsAlgo.js" afterPath="$PROJECT_DIR$/js/jsAlgo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsAlgo.html" afterPath="$PROJECT_DIR$/jsAlgo.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,28 +25,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="89" column="16" lean-forward="false" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+            <state relative-caret-position="-345">
+              <caret line="22" column="89" lean-forward="true" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="89" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsAlgo.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jsAlgo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jsAlgo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="412" column="14" lean-forward="false" selection-start-line="412" selection-start-column="14" selection-end-line="412" selection-end-column="14" />
+            <state relative-caret-position="195">
+              <caret line="13" column="86" lean-forward="true" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsAlgo.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jsAlgo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jsAlgo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="845" column="26" lean-forward="false" selection-start-line="845" selection-start-column="26" selection-end-line="845" selection-end-column="26" />
+            <state relative-caret-position="257">
+              <caret line="829" column="16" lean-forward="false" selection-start-line="829" selection-start-column="16" selection-end-line="829" selection-end-column="16" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
@@ -68,8 +67,8 @@
       <file leaf-file-name="jsAlgo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/jsAlgo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -91,7 +90,7 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="285">
               <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
               <folding />
             </state>
@@ -112,6 +111,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ci</find>
+      <find>small</find>
+      <find>argu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,9 +125,9 @@
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/jsAlgo.js" />
         <option value="$PROJECT_DIR$/css/jsAlgo.css" />
         <option value="$PROJECT_DIR$/jsAlgo.html" />
-        <option value="$PROJECT_DIR$/js/jsAlgo.js" />
       </list>
     </option>
   </component>
@@ -290,12 +291,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1484410652261</updated>
-      <workItem from="1484410653397" duration="19716000" />
+      <workItem from="1484410653397" duration="23641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19716000" />
+    <option name="totallyTimeSpent" value="23641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -349,14 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/calculator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2055">
@@ -365,37 +358,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jsAlgo.css">
+    <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="89" column="16" lean-forward="false" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsAlgo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="412" column="14" lean-forward="false" selection-start-line="412" selection-start-column="14" selection-end-line="412" selection-end-column="14" />
+        <state relative-caret-position="285">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jsAlgo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="845" column="26" lean-forward="false" selection-start-line="845" selection-start-column="26" selection-end-line="845" selection-end-column="26" />
+        <state relative-caret-position="257">
+          <caret line="829" column="16" lean-forward="false" selection-start-line="829" selection-start-column="16" selection-end-line="829" selection-end-column="16" />
           <folding>
             <element signature="e#0#49#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jsAlgo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="22" column="89" lean-forward="true" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsAlgo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="86" lean-forward="true" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
+          <folding />
         </state>
       </provider>
     </entry>
