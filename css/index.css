@@ -83,3 +83,9 @@ blockquote{
 .smallMargin{
     margin-top:5%;
 }
+#email{
+    font-size: large;
+}
+#myLogo{
+    color: #008CBA;
+}
