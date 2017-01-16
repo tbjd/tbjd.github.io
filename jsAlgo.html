@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/jsAlgo.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jsAlgo.js"></script>
+    <title>jsAlgo</title>
+</head>
+<body>
+<h1 class="text-center">JS algo</h1>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+          <h3 class="text-center">Reverse a string</h3>
+          <div class="row">
+              <div id="stringToReverse" class="col-sm-4">My string</div>
+              <div  class="text-center fleche col-sm-4">-></div>
+              <div id="reversedString" class="col-sm-4">reponse</div>
+          </div>
+          <div class="text-center"><button id="btnReverseString">Go</button></div>
+      </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Factorize a number</h3>
+            <div class="row">
+                <div id="numberToFac" class="col-sm-4">20</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repFacto" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnFacNumber">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">check for palindrome</h3>
+            <div class="row">
+                <div id="myPalindrome" class="col-sm-4">laval</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repPalindrome" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnPalindrome">Go</button></div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Longest word in a string</h3>
+            <div class="row">
+                <div id="myLongString" class="col-sm-4">The quick brown fox jumped over the lazy dog</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repLongString" class="col-sm-4"><reponse></reponse></div>
+            </div>
+            <div class="text-center"><button id="btnLongestWordString">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Title Case a Sentence</h3>
+            <div class="row">
+                <div id="myTitleCaseString" class="col-sm-4">this is a string with no maj</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repTitleCaseString" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnCaseSentence">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Largest number in arrays</h3>
+            <div class="row">
+                <div id="myLargestNumArray" class="col-sm-4">[[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repLargestNumArray" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnLargestNumArray">Go</button></div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Confirm the ending</h3>
+            <div class="row">
+                <div id="myConfirmEnding" class="col-sm-4">("Bastian", "n")</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repConfirmEnding" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnConfirmEnding">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Repeat a string</h3>
+            <div class="row">
+                <div id="myRepeatString" class="col-sm-4">("abc", 3)</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repRepeatString" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnRepeatString">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Truncate a string</h3>
+            <div class="row">
+                <div id="myTruncate" class="col-sm-4">("A-tisket a-tasket A green and yellow basket", 11)</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repTruncate" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnTruncateString">Go</button></div>
+        </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Chunky monkey</h3>
+            <div class="row">
+                <div id="myChunk" class="col-sm-4">([0, 1, 2, 3, 4, 5], 4)</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repChunk" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnMonkey">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Slasher flick</h3>
+            <div class="row">
+                <div id="mySlasher" class="col-sm-4">([1, 2, "chicken", 3, "potatoes", "cheese", 4], 5)</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSlasher" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSlasherFlick"n>Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Mutations</h3>
+            <div class="row">
+                <div id="myMutation" class="col-sm-4">(["Mary", "Army"])</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repMutation" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnMutations">Go</button></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Falsy bouncer</h3>
+            <div class="row">
+                <div id="myFalsy" class="col-sm-4">([7, "ate", "", false, 9])</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repFalsy" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnBounder">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Seek and destroy</h3>
+            <div class="row">
+                <div id="mySeekDestroy" class="col-sm-4">(["tree", "hamburger", 53], "tree", 53)</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSeekDestroy" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSeekDestroy">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Where do I belong</h3>
+            <div class="row">
+                <div id="myWhereBelong" class="col-sm-4">([10, 20, 30, 40, 50], 30)</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repWhereBelong" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnBelong">Go</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Caesars cipher</h3>
+            <div class="row">
+                <div class="col-sm-4">("SERR PBQR PNZC")</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repCipher" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnCipher">Go</button></div>
+        </div>
+
+        <div class="col-lg-4">
+            <h3 class="text-center">Sum all numbers in a range</h3>
+            <div class="row">
+                <div class="col-sm-4">([5, 10])</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSumNumRange" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSumNumRange">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Diff two arrays</h3>
+            <div class="row">
+                <div class="col-sm-4">([1, "calf", 3, "piglet"], [1, "calf", 3, 4])</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repDiffTwoArr" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnDiffTwoArrays">Go</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Roman numeral converter</h3>
+            <div class="row">
+                <div class="col-sm-4">(68)</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repRoman" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnRoman">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">DELETEEEEEE this  art thou</h3>
+            <div class="row">
+                <div class="col-sm-4">My string</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repWhereArt" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnArt">Go</button></div>
+        </div>
+
+        <div class="col-lg-4">
+            <h3 class="text-center">Search and replace</h3>
+            <div class="row">
+                <div class="col-sm-4">("He is Sleeping on the couch", "Sleeping", "sitting")</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSearchReplace" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSearchReplace">Go</button></div>
+        </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Pig latin</h3>
+            <div class="row">
+                <div class="col-sm-4">("glove")</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repPig" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnPigLatin">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">DNA pairing</h3>
+            <div class="row">
+                <div class="col-sm-4">("GCG")</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repDNA" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnDNA">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Missing letters</h3>
+            <div class="row">
+                <div class="col-sm-4">("abcdefghjklmno")</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repMissingLetters" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnMissingLetters">Go</button></div>
+        </div>
+    </div>
+        <div class="row">
+
+
+
+        <div class="col-lg-4">
+            <h3 class="text-center">Boo who</h3>
+            <div class="row">
+                <div class="col-sm-4">(NaN)</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repBooWho" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnBooWho">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Sorted Union</h3>
+            <div class="row">
+                <div class="col-sm-4">([1, 3, 2], [5, 2, 1, 4], [2, 1])</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSortedUnion" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSortedUnion">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Convert HTML entities</h3>
+            <div class="row">
+                <div class="col-sm-4">("Dolce & Gabbana");</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repConvertHtlm" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnConvertHtlm">Go</button></div>
+        </div>
+        </div>
+        <div class="row">
+
+        <div class="col-lg-4">
+            <h3 class="text-center">Spinal tap case</h3>
+            <div class="row">
+                <div class="col-sm-4">('This Is Spinal Tap')</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSpinal" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSpinal">Go</button></div>
+        </div>
+
+        <div class="col-lg-4">
+            <h3 class="text-center">Sum all odd fibonacci numbers</h3>
+            <div class="row">
+                <div class="col-sm-4">(1000)</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSumFibo" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSumOdd">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Sum all primes</h3>
+            <div class="row">
+                <div class="col-sm-4">(977)</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSumPrime" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSumPrime">Go</button></div>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Smallest common multiple</h3>
+            <div class="row">
+                <div class="col-sm-4">([1, 13])</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSmallestCommonMul" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSmallestCommonMultiple">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Finders keepers</h3>
+            <div class="row">
+                <div class="col-sm-4">([1, 2, 3, 4], function(num){ return num % 2 === 0; })</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repFinderKeeper" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnFindersKeepers">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Drop it</h3>
+            <div class="row">
+                <div class="col-sm-4">([1, 2, 3], function(n) {return n < 3; })</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repDropIt" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnDropIt">Go</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Steamroller</h3>
+            <div class="row">
+                <div class="col-sm-4">([1, [2], [3, [[4]]]])</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSteamRoller" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSteamroller">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Binary Agents</h3>
+            <div class="row">
+                <div class="col-sm-4">("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111")</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id ="repBinaryAgent" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnBinaryAgents">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Everything be true</h3>
+            <div class="row">
+                <div class="col-sm-4">([{"user": "Tinky-Winky", "sex": "male", "age": 0}, {"user": "Dipsy", "sex": "male", "age": 3}, {"user": "Laa-Laa", "sex": "female", "age": 5}, {"user": "Po", "sex": "female", "age": 4}], "age")</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repEverythingTrue" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnEverythingTrue">Go</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Arguments optional</h3>
+            <div class="row">
+                <div class="col-sm-4">(("http://bit.ly/"))</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repArgumentsOp" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnArgumentsOptional">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Validate US telephone numbers</h3>
+            <div class="row">
+                <div class="col-sm-4">("555-555-5555")</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repUsTel" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnUsPhone">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Symmetric difference</h3>
+            <div class="row">
+                <div class="col-sm-4">([1, 2, 5], [2, 3, 5], [3, 4, 5])</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repSymmetricDiff" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnSymDiff">Go</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Exact change</h3>
+            <div class="row">
+                <div class="col-sm-4">19.50, 20.00, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]])</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repExactChange" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnExactChange">Go</button></div>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">No repeats please</h3>
+            <div class="row">
+                <div class="col-sm-4">('aab')</div>
+                <div  class="text-center fleche col-sm-4">-></div>
+                <div id="repNoRepeat" class="col-sm-4">reponse</div>
+            </div>
+            <div class="text-center"><button id="btnNoRepeatsPlease">Go</button></div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+</body>
+</html>
