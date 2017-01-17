@@ -44,7 +44,6 @@ a.list-group-item.active,[class*='-info'] {
   
 #section1 {
 	background-color: white;
-    
 }
   
 #section2 {
@@ -77,16 +76,17 @@ blockquote{
   line-height: 1.428571429;
   border-radius: 50%;
 }
-.marginTop{
-    margin-top:10%;
-}
-.smallMargin{
-    margin-top:5%;
-}
+
 #emailContact{
     font-size: large;
 }
 #myLogoNav{
     color: #008CBA;
 
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
