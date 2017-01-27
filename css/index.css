@@ -129,6 +129,16 @@ nav.affix {
     text-decoration: none;
 
 }
+.homeButton:visited{
+    color: white;
+    text-decoration: none ;
+
+}
+#lineButton:focus{
+    color: white;
+    text-decoration: none ;
+
+}
 #section3 a{
     color: black;
 }
