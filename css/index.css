@@ -3,7 +3,7 @@
 html, body {
     font-family: 'Arima Madurai', 'cursive', 'sans-serif';
     height: 100%;
-    background-size: cover;
+
 }
 
 .icon-bar {
@@ -46,12 +46,10 @@ a.list-group-item.active, [class*='-info'] {
 }
 
 #myBackGround {
-    background: url('../img/planet_buble.jpg') -25px -50px;
-    top: 0;
+    background: url('../img/planet_buble.jpg');
     width: 100%;
-    z-index: 0;
     height: 100%;
-    background-size: calc(100% + 100px);
+    background-size: cover;
 }
 
 #section2 {
@@ -59,7 +57,7 @@ a.list-group-item.active, [class*='-info'] {
 }
 
 #section3 {
-    background-color: #6f5f7c;
+    background-color: #b1d5da;
 
 }
 
@@ -69,7 +67,7 @@ a.list-group-item.active, [class*='-info'] {
 }
 
 #section5 {
-    background-color: #6f5f7c;
+    background-color: #b1d5da;
 
 }
 
@@ -118,6 +116,11 @@ nav.affix {
     width: 100%;
     font-size: 4em;
     border-radius: 2px;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-duration: 3s;
+    -moz-animation-delay: 1s;
+    opacity: 0.3;
 
 }
 .homeButtonIcon{
